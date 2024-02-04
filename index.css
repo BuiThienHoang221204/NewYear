@@ -1,0 +1,98 @@
+/* canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+p {
+	margin: 0 0;
+	position: absolute;
+	font: 16px Verdana;
+	color: #eee;
+	height: 25px;
+	top: calc( 100vh - 30px );
+	text-shadow: 0 0 2px white;
+	line-height: 1.5;
+}
+p a {
+	text-decoration: none;
+	color: #aaa;
+}
+span {
+	font-size: 11px;
+}
+p > a:first-of-type {
+	font-size: 100px;
+}
+body {
+	overflow: hidden;
+} */
+body {
+    background: linear-gradient(135deg, #16213e, #1b2a4d); /* Gradient Background */
+    margin: 0;
+    overflow: hidden;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+p {
+    margin: 0 0;
+    position: absolute;
+    font: 16px Verdana;
+    color: #eee;
+    height: 25px;
+    top: calc(100vh - 30px);
+    text-shadow: 0 0 2px white;
+    line-height: 1.5;
+}
+
+p a {
+    text-decoration: none;
+    color: #aaa;
+}
+
+span {
+    font-size: 11px;
+}
+
+p > a:first-of-type {
+    font-size: 100px;
+    color: #fff; /* Change link color */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(135deg, #16213e, #1b2a4d); 
+}
+
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images.jpg') center/cover no-repeat; 
+    opacity: 0.2;
+}
+canvas, p, a, span {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+p {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+}
+
+a {
+    text-shadow: 0 0 3px rgba(255, 255, 255, 0.5);
+}
