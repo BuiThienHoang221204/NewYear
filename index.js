@@ -7,7 +7,7 @@ var w = c.width = window.innerWidth,
 		
 		opts = {
 			strings: [ 'HAPPY NEW YEAR!','CHÚC YOU NĂM MỚI DUI DẺ','NHỚ LÌ XÌ CHO TOI ^-^'],
-			charSize: 30,
+			charSize: 25,
 			charSpacing: 35,
 			lineHeight: 50,
 			
